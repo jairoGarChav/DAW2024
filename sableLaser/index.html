@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea tu sable laser</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <form action="#">
+        <label for="mango">Master
+            <select name="mango" id="jediSith" onchange="handleSelectChange()">
+                <option value="">Elige personaje</option>
+                <option value="Obi">Cal Kestis</option>
+                <option value="Luke">Luke Skywalker</option>
+                <option value="Vader">Anakin Skywalker</option>
+            </select>
+        </label>
+        <label for="colorPicker">
+            Color
+            <input type="color" name="" id="colorPicker" value="#FF0000" oninput="handleColorChange()">
+        </label>
+    </form>
+    
+    <div class="sable">
+        <div class="luz" id="colorSable"></div>
+        <div class="mango">
+            <img src="img/cal_kestis.png" alt="mango del sable de Cal Kestis" id="fotoMangu">
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
